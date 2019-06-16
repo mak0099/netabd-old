@@ -141,5 +141,9 @@ class UserController extends Controller {
         return redirect()->route('users.index')
                         ->with('flash_message', 'User successfully deleted.');
     }
+    public function visit_profile(){
+        $view = view('users.view_profile');;
+        return $view;
+    }
 
 }

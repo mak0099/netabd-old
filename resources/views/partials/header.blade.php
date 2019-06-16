@@ -2,9 +2,9 @@
     <!-- Logo -->
     <a href="{{route('index')}}" class="logo">
         <!-- mini logo for sidebar mini 50x50 pixels -->
-        <span class="logo-mini"><b>D</b>R</span>
+        <span class="logo-mini"><b>N</b>BD</span>
         <!-- logo for regular state and mobile devices -->
-        <span class="logo-lg"><b>Daily</b>Report</span>
+        <span class="logo-lg"><b>Neta</b>BD</span>
     </a>
     <!-- Header Navbar: style can be found in header.less -->
     <nav class="navbar navbar-static-top">
@@ -15,7 +15,6 @@
 
         <div class="navbar-custom-menu">
             <ul class="nav navbar-nav">
-                <li><a>{{Auth::user()->unit_name()}}</a></li>
                 <!-- Notifications: style can be found in dropdown.less -->
                 <li class="dropdown notifications-menu">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">

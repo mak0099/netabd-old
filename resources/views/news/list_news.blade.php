@@ -1,8 +1,8 @@
 @extends('layout')
 @section('after_style')
 <!-- Select2 -->
-<link rel="stylesheet" href="{{asset('public/asset/plugins/select2/select2.min.css')}}">
-<link rel="stylesheet" href="{{asset('public/asset/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css')}}">
+<link rel="stylesheet" href="{{asset('asset/plugins/select2/select2.min.css')}}">
+<link rel="stylesheet" href="{{asset('asset/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css')}}">
 @endsection
 @section('content_header')
 <h2 class="page-header">Newses <a href="#" class="btn btn-success pull-right" id="add_news"><i class="fa fa-plus"></i> Add news</a></h2>
@@ -82,8 +82,8 @@
 @endif
 @endsection
 @section('after_script')
-<script src="{{asset('public/asset/plugins/select2/select2.full.min.js')}}"></script>
-<script src="{{asset('public/asset/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js')}}"></script>
+<script src="{{asset('asset/plugins/select2/select2.full.min.js')}}"></script>
+<script src="{{asset('asset/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js')}}"></script>
 <script>
 $(function () {
     //Initialize Select2 Elements

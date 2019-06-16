@@ -1,7 +1,7 @@
 @extends('layout')
 @section('after_style')
 <!-- Select2 -->
-<link rel="stylesheet" href="{{asset('public/asset/plugins/select2/select2.min.css')}}">
+<link rel="stylesheet" href="{{asset('asset/plugins/select2/select2.min.css')}}">
 @endsection
 
 @section('content')
@@ -40,7 +40,7 @@
 @endsection
 @section('after_script')
 
-<script src="{{asset('public/asset/plugins/select2/select2.full.min.js')}}"></script>
+<script src="{{asset('asset/plugins/select2/select2.full.min.js')}}"></script>
 <script>
 $(function () {
     //Initialize Select2 Elements

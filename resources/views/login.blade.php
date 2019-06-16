@@ -7,28 +7,28 @@
         <!-- Tell the browser to be responsive to screen width -->
         <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
         <!-- Bootstrap 3.3.6 -->
-        <link rel="stylesheet" href="{{asset('public/asset/bootstrap/css/bootstrap.min.css')}}">
+        <link rel="stylesheet" href="{{asset('asset/bootstrap/css/bootstrap.min.css')}}">
         <!-- Font Awesome -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
         <!-- Ionicons -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
         <!-- Theme style -->
-        <link rel="stylesheet" href="{{asset('public/asset/css/AdminLTE.min.css')}}">
+        <link rel="stylesheet" href="{{asset('asset/css/AdminLTE.min.css')}}">
         <!-- iCheck -->
-        <link rel="stylesheet" href="{{asset('public/asset/plugins/iCheck/square/blue.css')}}">
-        <link rel="stylesheet" href="{{asset('public/asset/css/style.css')}}">
+        <link rel="stylesheet" href="{{asset('asset/plugins/iCheck/square/blue.css')}}">
+        <link rel="stylesheet" href="{{asset('asset/css/style.css')}}">
 
     </head>
-    <body class="hold-transition login-page" style="background: url(public/asset/img/background.jpg) no-repeat; background-size: 100% 100%; overflow: hidden">
+    <body class="hold-transition login-page" style="background: linear-gradient(76deg, #3F9963 15%, #42AA9E 100%);">
         <div class="login-box">
             
             <!-- /.login-logo -->
             <div class="login-box-body">
                 <div class="login-logo">
                 <div style="width: 150px; margin: 0 auto">
-                    <img src="{{asset('public/asset/img/logo.png')}}" class="img-circle img-responsive" alt="User Image">
+                    <img src="{{asset('asset/img/logo.png')}}" class="img-circle img-responsive" alt="User Image">
                 </div>
-                <a href="{{route('index')}}"><b>Daily</b>Report</a>
+                <a href="{{route('index')}}"><b>Neta</b>BD</a>
             </div>
                 <p class="login-box-msg">Sign in to start your session</p>
                 @include('partials/messages')
@@ -76,11 +76,11 @@
         <!-- /.login-box -->
 
         <!-- jQuery 2.2.3 -->
-        <script src="{{asset('public/asset/plugins/jQuery/jquery-2.2.3.min.js')}}"></script>
+        <script src="{{asset('asset/plugins/jQuery/jquery-2.2.3.min.js')}}"></script>
         <!-- Bootstrap 3.3.6 -->
-        <script src="{{asset('public/asset/bootstrap/js/bootstrap.min.js')}}"></script>
+        <script src="{{asset('asset/bootstrap/js/bootstrap.min.js')}}"></script>
         <!-- iCheck -->
-        <script src="{{asset('public/asset/plugins/iCheck/icheck.min.js')}}"></script>
+        <script src="{{asset('asset/plugins/iCheck/icheck.min.js')}}"></script>
         <script>
 $(function () {
     $('input').iCheck({

@@ -1,6 +1,6 @@
 @extends('layout')
 @section('after_style')
-<link rel="stylesheet" href="{{asset('public/asset/plugins/datatables/dataTables.bootstrap.css')}}">
+<link rel="stylesheet" href="{{asset('asset/plugins/datatables/dataTables.bootstrap.css')}}">
 @endsection
 
 @section('content')
@@ -54,8 +54,8 @@
 </div>
 @endsection
 @section('after_script')
-<script src="{{asset('public/asset/plugins/datatables/jquery.dataTables.min.js')}}"></script>
-<script src="{{asset('public/asset/plugins/datatables/dataTables.bootstrap.min.js')}}"></script>
+<script src="{{asset('asset/plugins/datatables/jquery.dataTables.min.js')}}"></script>
+<script src="{{asset('asset/plugins/datatables/dataTables.bootstrap.min.js')}}"></script>
 <script>
                                     $(function () {
                                         $('.data-table').DataTable({

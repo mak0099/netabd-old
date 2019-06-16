@@ -21,6 +21,9 @@ Route::group(['middleware' => 'auth'], function() {
     Route::get('/logout', ['as' => 'logout', 'uses' => 'HomeController@logout']);
     Route::get('/dashboard', ['as' => 'dashboard', 'uses' => 'DashboardController@getDashboard']);
     //Unit
+    Route::group(['prefix' => 'profile',], function() {
+        Route::get('/view-profile', ['as' => 'view_profile', 'uses' => 'UserController@visit_profile']);
+    });
     Route::group(['prefix' => 'unit', 'middleware' => 'mainUnit'], function() {
         Route::get('/list-unit', ['as' => 'list_unit', 'uses' => 'UnitController@listUnit']);
         Route::get('/add-unit', ['as' => 'add_unit', 'uses' => 'UnitController@addUnit']);

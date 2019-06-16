@@ -1,6 +1,6 @@
 @extends('layout')
 @section('after_style')
-<link rel="stylesheet" href="{{asset('public/asset/plugins/iCheck/flat/blue.css')}}">
+<link rel="stylesheet" href="{{asset('asset/plugins/iCheck/flat/blue.css')}}">
 @endsection
 
 @section('content')
@@ -99,7 +99,7 @@
 <!-- /.content -->
 @endsection
 @section('after_script')
-<script src="{{asset('public/asset/plugins/iCheck/icheck.min.js')}}"></script>
+<script src="{{asset('asset/plugins/iCheck/icheck.min.js')}}"></script>
 <script>
     $(function () {
         //Enable iCheck plugin for checkboxes

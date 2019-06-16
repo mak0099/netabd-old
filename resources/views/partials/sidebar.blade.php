@@ -2,18 +2,18 @@
     <!-- sidebar: style can be found in sidebar.less -->
     <section class="sidebar">
         <!-- Sidebar user panel -->
-        <div class="user-panel">
-            <img src="{{asset('public/asset/img/logo.png')}}" class="img-circle img-responsive" alt="User Image">
-        </div>
-        <!--      <div class="user-panel">
+        <!-- <div class="user-panel">
+            <img src="{{asset('asset/img/logo.png')}}" class="img-circle img-responsive" alt="User Image">
+        </div> -->
+             <div class="user-panel">
                 <div class="pull-left image">
-                  <img src="{{asset('public/health/img/mak.jpg')}}" class="img-circle" alt="User Image">
+                  <img src="{{asset('asset/img/mak.jpg')}}" class="img-circle" alt="User Image">
                 </div>
                 <div class="pull-left info">
                     <p>{{Auth::user()->name}}</p>
                   <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
                 </div>
-              </div>-->
+              </div>
 
         <!-- sidebar menu: : style can be found in sidebar.less -->
         <ul class="sidebar-menu">
@@ -23,7 +23,11 @@
                     <i class="fa fa-dashboard"></i> <span>Dashboard</span>
                 </a>
             </li>
-
+            <li class="{!! Request::is('profile/*') ? 'active' : '' !!}">
+                <a href="{{route('view_profile')}}">
+                    <i class="fa fa-user"></i> <span>Profile</span>
+                </a>
+            </li>
             @if(Auth::user()->unit_type() == 'Main Unit')
             <li class="{!! Request::is('unit/*') ? 'active' : '' !!}">
                 <a href="{{route('list_unit')}}">
